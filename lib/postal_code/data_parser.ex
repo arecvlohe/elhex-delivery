@@ -44,4 +44,18 @@ defmodule ElhexDelivery.PostalCode.DataParser do
      |> String.to_float
   end
 
+  @doc """
+  Takes a string and turns it into a integer
+
+  ## Examples
+      iex> ElhexDelivery.PostalCode.DataParser.string_to_int("123")
+      123
+  """
+
+  @spec string_to_int(String.t) :: integer
+  def string_to_int(str) do
+    str
+     |> String.to_integer
+  end
+
 end
